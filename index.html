@@ -4,20 +4,313 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Brick & Razor — мужской барбершоп. Стрижка, борода, бритьё опасной бритвой. Запись онлайн." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Brick & Razor — мужской барбершоп в центре Москвы. Стрижка, борода, опасная бритва. Запись в Telegram за минуту." />
+    <meta property="og:title" content="Brick & Razor — мужской барбершоп" />
+    <meta property="og:description" content="Стрижка, борода, опасная бритва. Запись в Telegram за минуту." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>Brick & Razor — мужской барбершоп</title>
   </head>
-  <body class="min-h-screen">
-    <main class="grid min-h-screen place-items-center">
-      <div class="text-center px-6">
-        <p class="text-bronze tracking-[0.4em] text-sm mb-4">BRICK &amp; RAZOR</p>
-        <h1 class="font-display text-6xl md:text-8xl tracking-wide">Скоро открытие</h1>
-        <p class="text-text-muted mt-6 max-w-md mx-auto">Мужской барбершоп. Лендинг в разработке.</p>
+  <body class="min-h-screen bg-bg text-text">
+
+    <!-- ──────── Header ──────── -->
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-border bg-bg/85 backdrop-blur">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#hero" class="font-display text-2xl tracking-[0.2em] text-text">
+          BRICK <span class="text-bronze">&amp;</span> RAZOR
+        </a>
+        <ul class="hidden gap-8 text-sm uppercase tracking-widest text-text-muted md:flex">
+          <li><a href="#services" class="transition hover:text-bronze">Услуги</a></li>
+          <li><a href="#barbers"  class="transition hover:text-bronze">Барберы</a></li>
+          <li><a href="#about"    class="transition hover:text-bronze">О нас</a></li>
+          <li><a href="#contacts" class="transition hover:text-bronze">Контакты</a></li>
+        </ul>
+        <a href="#booking" class="rounded-sm border border-bronze px-4 py-2 text-sm uppercase tracking-widest text-bronze transition hover:bg-bronze hover:text-bg">
+          Запись
+        </a>
+      </nav>
+    </header>
+
+    <!-- ──────── Hero ──────── -->
+    <section id="hero" class="relative isolate flex min-h-screen items-center overflow-hidden pt-20">
+      <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(184,118,60,0.12),transparent_60%)]"></div>
+      <div aria-hidden="true" class="absolute inset-0 -z-10 opacity-[0.04]" style="background-image: linear-gradient(rgba(242,235,221,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(242,235,221,0.4) 1px, transparent 1px); background-size: 80px 80px;"></div>
+
+      <div class="mx-auto grid w-full max-w-6xl gap-12 px-6 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+        <div>
+          <p class="mb-6 text-sm uppercase tracking-[0.5em] text-bronze">мужской барбершоп · Москва</p>
+          <h1 class="font-display text-6xl leading-[0.95] tracking-wide md:text-8xl">
+            СТРИЖКА<br />
+            КАК <span class="text-bronze">РИТУАЛ</span>
+          </h1>
+          <p class="mt-8 max-w-lg text-lg text-text-muted">
+            Стрижка, борода, опасная бритва. Восемь барберов со стажем от пяти лет.
+            Запись в Telegram занимает минуту — без звонков и автоответчиков.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#booking" class="rounded-sm bg-bronze px-8 py-4 text-sm uppercase tracking-widest text-bg transition hover:bg-bronze-hover">
+              Записаться
+            </a>
+            <a href="#services" class="rounded-sm border border-border px-8 py-4 text-sm uppercase tracking-widest text-text transition hover:border-bronze hover:text-bronze">
+              Прайс-лист
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden lg:block">
+          <div class="relative">
+            <div class="aspect-[3/4] rounded-sm border border-border bg-surface bg-[radial-gradient(ellipse_at_center,rgba(184,118,60,0.18),transparent_70%)]"></div>
+            <div class="absolute -bottom-6 -left-6 rounded-sm border border-border bg-surface-2 px-6 py-4">
+              <p class="font-display text-3xl text-bronze">8+</p>
+              <p class="text-xs uppercase tracking-widest text-text-muted">лет на рынке</p>
+            </div>
+            <div class="absolute -right-6 -top-6 rounded-sm border border-border bg-surface-2 px-6 py-4">
+              <p class="font-display text-3xl text-bronze">10–22</p>
+              <p class="text-xs uppercase tracking-widest text-text-muted">ежедневно</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
+
+    <!-- ──────── Услуги ──────── -->
+    <section id="services" class="border-t border-border py-24">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="mb-16 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="text-sm uppercase tracking-[0.5em] text-bronze">прайс</p>
+            <h2 class="mt-4 font-display text-5xl tracking-wide md:text-6xl">Услуги</h2>
+          </div>
+          <p class="max-w-md text-text-muted">
+            Фиксированный прайс без скрытых наценок. Бритьё, борода, стрижка — каждая услуга по таймингу мастера.
+          </p>
+        </div>
+
+        <div class="grid gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+          <article class="bg-surface p-8 transition hover:bg-surface-2">
+            <p class="text-xs uppercase tracking-widest text-text-muted">01</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Мужская стрижка</h3>
+            <p class="mt-2 text-sm text-text-muted">Машинка + ножницы, укладка, мытьё, тёплое полотенце.</p>
+            <p class="mt-6 font-display text-3xl text-bronze">2 200 ₽</p>
+          </article>
+
+          <article class="bg-surface p-8 transition hover:bg-surface-2">
+            <p class="text-xs uppercase tracking-widest text-text-muted">02</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Стрижка + борода</h3>
+            <p class="mt-2 text-sm text-text-muted">Комбо: стрижка под скульптуру бороды. Экономия 700 ₽.</p>
+            <p class="mt-6 font-display text-3xl text-bronze">3 500 ₽</p>
+          </article>
+
+          <article class="bg-surface p-8 transition hover:bg-surface-2">
+            <p class="text-xs uppercase tracking-widest text-text-muted">03</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Камуфляж бороды</h3>
+            <p class="mt-2 text-sm text-text-muted">Натуральная коррекция седины. Держится 3–4 недели.</p>
+            <p class="mt-6 font-display text-3xl text-bronze">2 000 ₽</p>
+          </article>
+
+          <article class="bg-surface p-8 transition hover:bg-surface-2">
+            <p class="text-xs uppercase tracking-widest text-text-muted">04</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Бритьё опасной бритвой</h3>
+            <p class="mt-2 text-sm text-text-muted">Классический ритуал: компрессы, масло, бритва, бальзам.</p>
+            <p class="mt-6 font-display text-3xl text-bronze">1 800 ₽</p>
+          </article>
+
+          <article class="bg-surface p-8 transition hover:bg-surface-2">
+            <p class="text-xs uppercase tracking-widest text-text-muted">05</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Детская стрижка</h3>
+            <p class="mt-2 text-sm text-text-muted">До 12 лет. Мультики на экране, какао после.</p>
+            <p class="mt-6 font-display text-3xl text-bronze">1 500 ₽</p>
+          </article>
+
+          <article class="bg-surface p-8 transition hover:bg-surface-2">
+            <p class="text-xs uppercase tracking-widest text-text-muted">06</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Отец и сын</h3>
+            <p class="mt-2 text-sm text-text-muted">Стрижка для двоих в один визит. Соседние кресла.</p>
+            <p class="mt-6 font-display text-3xl text-bronze">3 300 ₽</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────── Барберы ──────── -->
+    <section id="barbers" class="border-t border-border bg-surface py-24">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="mb-16">
+          <p class="text-sm uppercase tracking-[0.5em] text-bronze">команда</p>
+          <h2 class="mt-4 font-display text-5xl tracking-wide md:text-6xl">Барберы</h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+          <article class="group rounded-sm border border-border bg-bg p-6 transition hover:border-bronze">
+            <div class="aspect-[4/5] rounded-sm bg-surface-2 bg-[radial-gradient(circle_at_center,rgba(184,118,60,0.15),transparent_60%)] flex items-end justify-center pb-6">
+              <span class="font-display text-7xl text-bronze/30">АВ</span>
+            </div>
+            <h3 class="mt-6 font-display text-2xl tracking-wide">Андрей Волков</h3>
+            <p class="mt-1 text-sm uppercase tracking-widest text-bronze">старший барбер</p>
+            <p class="mt-4 text-sm text-text-muted">
+              8 лет в профессии. Old School, Skin Fade, классические мужские стрижки.
+              Сертификат American Crew Academy.
+            </p>
+          </article>
+
+          <article class="group rounded-sm border border-border bg-bg p-6 transition hover:border-bronze">
+            <div class="aspect-[4/5] rounded-sm bg-surface-2 bg-[radial-gradient(circle_at_center,rgba(184,118,60,0.15),transparent_60%)] flex items-end justify-center pb-6">
+              <span class="font-display text-7xl text-bronze/30">МС</span>
+            </div>
+            <h3 class="mt-6 font-display text-2xl tracking-wide">Михаил Сазонов</h3>
+            <p class="mt-1 text-sm uppercase tracking-widest text-bronze">мастер бороды</p>
+            <p class="mt-4 text-sm text-text-muted">
+              6 лет, обучался у Murdock London. Скульптура бороды,
+              камуфляж, классическое бритьё опасной бритвой.
+            </p>
+          </article>
+
+          <article class="group rounded-sm border border-border bg-bg p-6 transition hover:border-bronze">
+            <div class="aspect-[4/5] rounded-sm bg-surface-2 bg-[radial-gradient(circle_at_center,rgba(184,118,60,0.15),transparent_60%)] flex items-end justify-center pb-6">
+              <span class="font-display text-7xl text-bronze/30">ДК</span>
+            </div>
+            <h3 class="mt-6 font-display text-2xl tracking-wide">Денис Кареев</h3>
+            <p class="mt-1 text-sm uppercase tracking-widest text-bronze">fade-специалист</p>
+            <p class="mt-4 text-sm text-text-muted">
+              5 лет, чемпион OMC Hairworld Junior 2023.
+              Точные fade-переходы, геометрические линии, дизайнерские проборы.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────── Почему мы ──────── -->
+    <section id="about" class="border-t border-border py-24">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="mb-16">
+          <p class="text-sm uppercase tracking-[0.5em] text-bronze">почему мы</p>
+          <h2 class="mt-4 font-display text-5xl tracking-wide md:text-6xl">Три причины зайти</h2>
+        </div>
+
+        <div class="grid gap-12 md:grid-cols-3">
+          <div>
+            <p class="font-display text-6xl text-bronze">01</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Запись за минуту</h3>
+            <p class="mt-4 text-text-muted">
+              Бот в Telegram отвечает мгновенно. Без звонков, без приёмных,
+              без «перезвоним через час». Видим запись — подтверждаем.
+            </p>
+          </div>
+
+          <div>
+            <p class="font-display text-6xl text-bronze">02</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Только проверенные мастера</h3>
+            <p class="mt-4 text-text-muted">
+              Стаж от пяти лет, личное портфолио, регулярные стажировки.
+              Каждый кандидат проходит тестовую неделю с действующими клиентами.
+            </p>
+          </div>
+
+          <div>
+            <p class="font-display text-6xl text-bronze">03</p>
+            <h3 class="mt-4 font-display text-2xl tracking-wide">Атмосфера, не глянец</h3>
+            <p class="mt-4 text-text-muted">
+              Кирпич, кожа, чугун, тёплый свет. Виски и кофе — на доме.
+              Никаких сетевых интерьеров и заигрываний с трендами.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────── Форма записи ──────── -->
+    <section id="booking" class="border-t border-border bg-surface py-24">
+      <div class="mx-auto grid max-w-5xl gap-12 px-6 lg:grid-cols-[1fr_1.4fr] lg:items-start">
+        <div>
+          <p class="text-sm uppercase tracking-[0.5em] text-bronze">запись</p>
+          <h2 class="mt-4 font-display text-5xl tracking-wide md:text-6xl">Заполните форму</h2>
+          <p class="mt-6 text-text-muted">
+            Запрос уходит барберу в Telegram. В течение 10 минут перезвоним,
+            подтвердим время и мастера.
+          </p>
+          <ul class="mt-8 space-y-3 text-sm text-text-muted">
+            <li class="flex items-center gap-3"><span class="h-px w-6 bg-bronze"></span>Без предоплаты</li>
+            <li class="flex items-center gap-3"><span class="h-px w-6 bg-bronze"></span>Отмена за 2 часа без штрафа</li>
+            <li class="flex items-center gap-3"><span class="h-px w-6 bg-bronze"></span>Подарочные сертификаты</li>
+          </ul>
+        </div>
+
+        <form id="booking-form" class="space-y-5" novalidate>
+          <div>
+            <label for="name" class="mb-2 block text-xs uppercase tracking-widest text-text-muted">Имя</label>
+            <input id="name" name="name" type="text" required minlength="2" autocomplete="name"
+              class="w-full rounded-sm border border-border bg-bg px-4 py-3 text-text outline-none transition focus:border-bronze" />
+          </div>
+
+          <div>
+            <label for="phone" class="mb-2 block text-xs uppercase tracking-widest text-text-muted">Телефон</label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="+7 (___) ___-__-__"
+              class="w-full rounded-sm border border-border bg-bg px-4 py-3 text-text outline-none transition focus:border-bronze" />
+          </div>
+
+          <div>
+            <label for="service" class="mb-2 block text-xs uppercase tracking-widest text-text-muted">Услуга</label>
+            <select id="service" name="service" required
+              class="w-full rounded-sm border border-border bg-bg px-4 py-3 text-text outline-none transition focus:border-bronze">
+              <option value="">— выберите —</option>
+              <option>Мужская стрижка</option>
+              <option>Стрижка + борода</option>
+              <option>Камуфляж бороды</option>
+              <option>Бритьё опасной бритвой</option>
+              <option>Детская стрижка</option>
+              <option>Отец и сын</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="when" class="mb-2 block text-xs uppercase tracking-widest text-text-muted">Удобное время</label>
+            <input id="when" name="when" type="text" placeholder="например, завтра после 19:00"
+              class="w-full rounded-sm border border-border bg-bg px-4 py-3 text-text outline-none transition focus:border-bronze" />
+          </div>
+
+          <button id="submit-btn" type="submit"
+            class="w-full rounded-sm bg-bronze px-8 py-4 text-sm uppercase tracking-widest text-bg transition hover:bg-bronze-hover disabled:cursor-not-allowed disabled:opacity-60">
+            Записаться
+          </button>
+
+          <p id="form-status" class="min-h-[1.5rem] text-sm" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ──────── Footer ──────── -->
+    <footer id="contacts" class="border-t border-border py-16">
+      <div class="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-3">
+        <div>
+          <p class="font-display text-2xl tracking-[0.2em] text-text">
+            BRICK <span class="text-bronze">&amp;</span> RAZOR
+          </p>
+          <p class="mt-4 text-sm text-text-muted">Мужской барбершоп с 2018 года.</p>
+        </div>
+
+        <div>
+          <p class="text-xs uppercase tracking-widest text-text-muted">Адрес</p>
+          <p class="mt-2 text-text">Москва, Большая Никитская, 24</p>
+          <p class="mt-4 text-xs uppercase tracking-widest text-text-muted">Часы</p>
+          <p class="mt-2 text-text">Ежедневно 10:00 — 22:00</p>
+        </div>
+
+        <div>
+          <p class="text-xs uppercase tracking-widest text-text-muted">Связь</p>
+          <a href="tel:+74950000000" class="mt-2 block text-text transition hover:text-bronze">+7 (495) 000-00-00</a>
+          <a href="https://t.me/brick_razor_booking_bot" target="_blank" rel="noopener" class="mt-2 block text-text transition hover:text-bronze">Telegram-бот</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="mt-2 block text-text transition hover:text-bronze">Instagram</a>
+        </div>
+      </div>
+
+      <div class="mx-auto mt-12 max-w-6xl border-t border-border px-6 pt-6 text-xs text-text-muted">
+        © 2026 Brick &amp; Razor. Все права защищены.
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
