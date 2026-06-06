@@ -1,5 +1,7 @@
 # Brick & Razor — лендинг мужского барбершопа
 
+**Live:** https://barbershop-landing-wheat.vercel.app
+
 Одностраничный лендинг с записью через Telegram-бот. Бэкенд — serverless-функция на Vercel; токен бота в браузер не утекает.
 
 ## Стек
