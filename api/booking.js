@@ -1,14 +1,18 @@
 const TOKEN   = process.env.TG_BOT_TOKEN
 const CHAT_ID = process.env.TG_CHAT_ID
 
+function esc (s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
 function formatMessage ({ name, phone, service, when }) {
   return [
     '🪒 <b>Новая заявка с лендинга</b>',
     '',
-    `<b>Имя:</b> ${name}`,
-    `<b>Телефон:</b> ${phone}`,
-    `<b>Услуга:</b> ${service}`,
-    when ? `<b>Удобное время:</b> ${when}` : null,
+    `<b>Имя:</b> ${esc(name)}`,
+    `<b>Телефон:</b> ${esc(phone)}`,
+    `<b>Услуга:</b> ${esc(service)}`,
+    when ? `<b>Удобное время:</b> ${esc(when)}` : null,
   ].filter(Boolean).join('\n')
 }
 

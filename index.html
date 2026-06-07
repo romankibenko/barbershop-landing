@@ -9,12 +9,38 @@
     <meta property="og:title" content="Brick & Razor — мужской барбершоп" />
     <meta property="og:description" content="Санкт-Петербург, Большая Морская, 24. Стрижка, борода, опасная бритва. Запись в Telegram за минуту." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/favicon.svg" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&h=630&fit=crop&q=80" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>Brick & Razor — мужской барбершоп</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Brick & Razor",
+      "description": "Мужской барбершоп в центре Санкт-Петербурга. Стрижка, борода, опасная бритва.",
+      "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&h=630&fit=crop&q=80",
+      "url": "https://barbershop-landing-wheat.vercel.app/",
+      "telephone": "+7 (812) 000-00-00",
+      "priceRange": "1500–3500 ₽",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Большая Морская, 24",
+        "addressLocality": "Санкт-Петербург",
+        "addressCountry": "RU"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "22:00"
+      }
+    }
+    </script>
   </head>
   <body class="min-h-screen bg-bg text-text">
 
@@ -36,6 +62,8 @@
       </nav>
     </header>
 
+    <main>
+
     <!-- ──────── Hero ──────── -->
     <section id="hero" class="relative isolate flex min-h-screen items-center overflow-hidden pt-20">
       <div aria-hidden="true" class="absolute inset-0 -z-20">
@@ -55,8 +83,8 @@
             КАК <span class="text-bronze">РИТУАЛ</span>
           </h1>
           <p class="mt-8 max-w-lg text-lg text-text-muted">
-            Стрижка, борода, опасная бритва. Восемь барберов со стажем от пяти лет.
-            Запись в Telegram занимает минуту — без звонков и автоответчиков.
+            Стрижка, борода, опасная бритва. Трое барберов со стажем от пяти лет.
+            Запись за минуту — в Telegram-боте или через форму ниже.
           </p>
           <div class="mt-10 flex flex-wrap gap-4">
             <a href="#booking" class="rounded-sm bg-bronze px-8 py-4 text-sm uppercase tracking-widest text-bg transition hover:bg-bronze-hover">
@@ -213,8 +241,8 @@
             <p class="font-display text-6xl text-bronze">01</p>
             <h3 class="mt-4 font-display text-2xl tracking-wide">Запись за минуту</h3>
             <p class="mt-4 text-text-muted">
-              Бот в Telegram отвечает мгновенно. Без звонков, без приёмных,
-              без «перезвоним через час». Видим запись — подтверждаем.
+              Бот в Telegram принимает запись сам: услуга, мастер, день и время —
+              прямо в чате. Заявку с формы подтверждаем звонком за 10 минут.
             </p>
           </div>
 
@@ -298,6 +326,8 @@
         </form>
       </div>
     </section>
+
+    </main>
 
     <!-- ──────── Footer ──────── -->
     <footer id="contacts" class="border-t border-border py-16">
