@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/build-bot.mjs && vite build",
+    "build": "vite build",
+    "build:bot": "node scripts/build-bot.mjs",
     "preview": "vite preview",
     "set-webhook": "node scripts/set-webhook.mjs"
   },

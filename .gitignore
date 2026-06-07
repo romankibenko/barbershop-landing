@@ -12,9 +12,6 @@ dist
 dist-ssr
 *.local
 
-# Сборка бота — генерится esbuild'ом при build (scripts/build-bot.mjs)
-api/bot.js
-
 # Secrets — токены/chat_id Telegram
 .env
 .env.*
